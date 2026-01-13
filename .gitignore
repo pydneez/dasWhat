@@ -1,0 +1,59 @@
+# ========================
+# OS & IDE Files (Junk)
+# ========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.log
+
+.env
+
+# ========================
+# BACKEND (Java & Maven)
+# ========================
+# Ignore build results
+backend/target/
+**/target/
+
+# Ignore compiled class files
+*.class
+
+# Ignore packaged JARs (we build them in Docker)
+*.jar
+*.war
+
+# Ignore Maven wrapper properties (Optional, but often good to keep wrapper itself)
+backend/.mvn/wrapper/maven-wrapper.properties
+
+# ========================
+# FRONTEND (Node & React)
+# ========================
+# massive dependency folder - NEVER upload this
+frontend/node_modules/
+**/node_modules/
+
+# build output
+frontend/dist/
+frontend/build/
+
+# Local environment variables (keep secrets safe)
+frontend/.env
+frontend/.env.local
+
+# Vite/Test logs
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# DOCKER & DATABASE
+# ========================
+# Ignore local database data if you mapped it to a folder
+db_data/
+postgres-data/
+
+# Ignore local env files containing secrets
+.env

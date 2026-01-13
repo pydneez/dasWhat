@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* If the line above gives an error, use the standard 3 lines:
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+*/
+
+body {
+    background-color: #f3f4f6; /* Light gray background */
+    font-family: 'Inter', sans-serif; /* Clean font */
+    -webkit-font-smoothing: antialiased;
+}
